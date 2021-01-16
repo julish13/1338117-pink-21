@@ -318,12 +318,14 @@
       margin-bottom: 10px;
     }
 
-    &[type=tel] {
-      background-image: url("../img/phone-icon.svg"), url("../img/icon-underlay.png");
+    &[type="tel"] {
+      background-image: url("../img/phone-icon.svg"),
+        url("../img/icon-underlay.png");
     }
 
-    &[type=email] {
-      background-image: url("../img/mail-icon.svg"), url("../img/icon-underlay.png");
+    &[type="email"] {
+      background-image: url("../img/mail-icon.svg"),
+        url("../img/icon-underlay.png");
     }
   }
 

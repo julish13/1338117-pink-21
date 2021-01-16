@@ -164,13 +164,11 @@
   }
 }
 
-
 .advantages__title {
   margin: 0 0 10px 0;
   color: $basic-black;
   font-size: 18px;
   font-weight: bold;
-
 
   @media #{$desktop-min} {
     width: 240px;
@@ -219,7 +217,6 @@
   }
 }
 
-
 .advantages__effect {
   @media #{$mobile-max} {
     display: none;
@@ -241,7 +238,6 @@
   background-position: left top 60%;
   background-repeat: no-repeat;
   text-align: left;
-
 
   @media #{$desktop-min} {
     @include c940;

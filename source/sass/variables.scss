@@ -4,15 +4,23 @@ $desktop-width: 1200px;
 $mobile-width-only: 659px;
 $mobile-and-tablet-width-only: 1199px;
 
-$mobile-max: (max-width: $mobile-width-only);
-$tablet-min: (min-width: $tablet-width);
-$tablet-max: (max-width: $mobile-and-tablet-width-only);
-$desktop-min: (min-width: $desktop-width);
+$mobile-max: (
+  max-width: $mobile-width-only,
+);
+$tablet-min: (
+  min-width: $tablet-width,
+);
+$tablet-max: (
+  max-width: $mobile-and-tablet-width-only,
+);
+$desktop-min: (
+  min-width: $desktop-width,
+);
 
 $basic-color: hsl(211, 27%, 21%);
 $basic-dark: hsl(213, 26%, 15%);
 $basic-white: hsl(0, 100%, 100%);
-$basic-black : hsl(0, 100%, 0%);
+$basic-black: hsl(0, 100%, 0%);
 $basic-pink: hsl(344, 68%, 49%);
 $basic-green: hsl(151, 61%, 42%);
 $basic-green-hover: hsl(154, 83%, 41%);
