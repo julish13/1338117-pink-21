@@ -153,9 +153,38 @@
 }
 
 .download__link {
+  position: relative;
+
   &:not(:nth-child(3n)) {
     margin-right: 35px;
   }
+}
+
+.download__link::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.download__link--apple::before {
+  background-image: url("../img/icon-apple.svg");
+  width: 47px;
+  height: 56px;
+}
+
+.download__link--android::before {
+  background-image: url("../img/icon-android.svg");
+  width: 43px;
+  height: 47px;
+}
+
+.download__link--microsoft::before {
+  background-image: url("../img/icon-microsoft.svg");
+  width: 44px;
+  height: 41px;
 }
 
 .download__description {

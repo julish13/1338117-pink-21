@@ -13,7 +13,7 @@
   }
 
   &--280 {
-    @media (max-width: $mobile-width-only) {
+    @media #{$mobile-max} {
       margin-left: auto;
       margin-right: auto;
       width: 280px;
@@ -21,7 +21,7 @@
   }
 
   &--620 {
-    @media (min-width: $tablet-width) and (max-width: $mobile-and-tablet-width-only) {
+    @media #{$tablet-min} and #{$tablet-max} {
       margin-left: auto;
       margin-right: auto;
       width: 620px;
