@@ -1,0 +1,33 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$mobile-max} {
+    @include c280;
+  }
+}
+
+.copyright__text {
+  margin-right: 5px;
+
+  @media #{$desktop-min} {
+    font-size: 18px;
+  }
+}
+
+.copyright__icon {
+  vertical-align: bottom;
+
+  use {
+    fill: $basic-pink;
+
+    &:hover {
+      fill: $basic-color;
+    }
+
+    &:active {
+      fill: transparentize($basic-color, 0.7);
+    }
+  }
+}

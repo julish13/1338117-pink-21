@@ -1,0 +1,14 @@
+.button-square {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: none;
+  border-radius: 3px;
+  color: $basic-white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}

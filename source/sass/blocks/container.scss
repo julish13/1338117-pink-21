@@ -1,0 +1,33 @@
+.container {
+  &--any {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--940 {
+
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 940px;
+    }
+  }
+
+  &--280 {
+
+    @media (max-width: $mobile-width-only) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 280px;
+    }
+  }
+
+  &--620 {
+
+    @media (min-width: $tablet-width) and (max-width: $mobile-and-tablet-width-only) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 620px;
+    }
+  }
+}

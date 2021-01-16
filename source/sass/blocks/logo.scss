@@ -1,0 +1,198 @@
+.logo {
+  position: relative;
+  display: block;
+}
+
+.logo--header {
+  width: 75px;
+  height: 67px;
+
+  @media #{$tablet-min} {
+    height: 105px;
+  }
+
+  @media #{$desktop-min} {
+    width: 147px;
+  }
+
+  .logo__pink {
+    top: 25px;
+    left: 20px;
+
+    @media #{$tablet-min} {
+      top: 40px;
+      left: 90px;
+    }
+
+    @media #{$desktop-min} {
+      left: 70px;
+    }
+
+    use {
+      fill: $basic-white;
+    }
+  }
+
+  .logo__glasses {
+    display: none;
+
+    @media #{$tablet-min} and #{$tablet-max} {
+      top: 25px;
+      left: 20px;
+      display: block;
+    }
+
+    use {
+      fill: $basic-white;
+    }
+  }
+
+  .logo__starred-glasses {
+    top: 25px;
+    display: none;
+
+    @media #{$desktop-min} {
+      display: block;
+    }
+
+    use {
+      fill: $basic-white;
+    }
+  }
+
+  .logo__stars {
+    top: 26px;
+    display: none;
+
+    @media #{$desktop-min} {
+      display: block;
+    }
+
+    use {
+      fill: $basic-pink;
+    }
+  }
+
+  .logo__diacritic {
+    display: none;
+
+    @media #{$desktop-min} {
+      top: 30px;
+      left: 90px;
+      display: block;
+    }
+
+    use {
+      fill: $basic-pink;
+    }
+  }
+}
+
+.logo--footer {
+  width: 145px;
+  height: 40px;
+
+  .logo__pink {
+    top: 20px;
+
+    @media #{$tablet-min} {
+      top: 10px;
+      left: 70px;
+    }
+
+    @media #{$desktop-min} {
+      top: 10px;
+      left: 72px;
+    }
+
+    use {
+      fill: $basic-color;
+    }
+  }
+
+  .logo__glasses {
+    top: 5px;
+    display: block;
+
+    @media #{$tablet-min} {
+      top: -10px;
+    }
+
+    @media #{$desktop-min} {
+      display: none;
+    }
+
+    use {
+      fill: $basic-pink;
+    }
+  }
+
+  .logo__starred-glasses {
+    display: none;
+
+    @media #{$desktop-min} {
+      top: -5px;
+      display: block;
+    }
+
+    use {
+      fill: $basic-pink;
+    }
+  }
+
+  .logo__stars {
+    display: none;
+
+    @media #{$desktop-min} {
+      top: -5px;
+      display: block;
+    }
+
+    use {
+      fill: $basic-color;
+    }
+  }
+
+  .logo__diacritic {
+    display: none;
+
+    @media #{$desktop-min} {
+      left: 90px;
+      display: block;
+    }
+
+    use {
+      fill: $basic-pink;
+    }
+  }
+}
+
+.logo__pink {
+  position: absolute;
+  width: 74px;
+  height: 23px;
+}
+
+.logo__glasses {
+  position: absolute;
+  width: 74px;
+  height: 40px;
+}
+
+.logo__starred-glasses {
+  position: absolute;
+  width: 74px;
+  height: 40px;
+}
+
+.logo__stars {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+}
+
+.logo__diacritic {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}

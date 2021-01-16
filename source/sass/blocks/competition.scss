@@ -1,0 +1,42 @@
+.competition {
+  padding-top: 42px;
+  padding-bottom: 10px;
+  background-color: $basic-white;
+
+  @media #{$tablet-min} {
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+}
+
+.competition__intro-wrapper {
+  @include c280;
+
+  @media #{$tablet-min} {
+    width: 490px;
+  }
+
+  @media #{$desktop-min} {
+    width: 756px;
+  }
+}
+
+.competition__intro {
+  margin: 0;
+  line-height: 2.14;
+
+  @media #{$tablet-min} {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  &:nth-child(2) {
+    @media #{$mobile-max} {
+      display: none;
+    }
+  }
+
+  @media #{$desktop-min} {
+    display: inline;
+  }
+}

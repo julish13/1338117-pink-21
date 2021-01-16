@@ -1,0 +1,8 @@
+.main {
+  margin-top: -70px;
+  background-color: $basic-white;
+
+  @media #{$tablet-min} {
+    margin-top: -115px;
+  }
+}

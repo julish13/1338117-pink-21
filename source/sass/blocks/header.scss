@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-max} {
+    background-color: $basic-color;
+  }
+}
