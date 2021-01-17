@@ -1,5 +1,6 @@
 .main-nav__layer {
   background-color: transparentize($basic-black, 0.7);
+  position: relative;
 }
 
 .main-nav--opened .main-nav__layer {
