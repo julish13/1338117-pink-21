@@ -1,14 +1,14 @@
-body {
-  min-width: $mobile-width;
-  margin: 0;
-  background-color: $basic-white;
-  color: $basic-color;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.sprite path {
-  fill: inherit;
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
