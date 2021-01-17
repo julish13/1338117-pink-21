@@ -12,12 +12,14 @@
         background-position: 50% 0;
         /* Mobile layout by default */
         background-image: url("../pixel-glass/images/Index-Mobile.png");
+        /* background-image: url("../pixel-glass/images/Mobile-menu.png"); */
       }
       /* Tablet */
       @media (min-width: 660px) {
         HTML {
           /* Tablet layout */
-          background-image: url("../pixel-glass/images/Index-Tablet.png");
+          /* background-image: url("../pixel-glass/images/Index-Tablet.png"); */
+          background-image: url("../pixel-glass/images/Tablet-menu.png");
         }
       }
       /* Desktop */
@@ -37,26 +39,28 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__layer">
           <div class="main-nav__wrapper">
-            <a class="logo logo--header">
-              <svg class="logo__glasses">
-                <use xlink:href="img/sprite.svg#logo-glasses"></use>
-              </svg>
-              <svg class="logo__pink">
-                <use xlink:href="img/sprite.svg#logo-pink"></use>
-              </svg>
-              <svg class="logo__starred-glasses">
-                <use xlink:href="img/sprite.svg#logo-starred-glasses"></use>
-              </svg>
-              <svg class="logo__stars">
-                <use xlink:href="img/sprite.svg#logo-stars"></use>
-              </svg>
-              <svg class="logo__diacritic">
-                <use xlink:href="img/sprite.svg#logo-diacritic"></use>
-              </svg>
-            </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <header class="main-nav__header">
+              <a class="logo logo--header main-nav__logo">
+                <svg class="logo__glasses">
+                  <use xlink:href="img/sprite.svg#logo-glasses"></use>
+                </svg>
+                <svg class="logo__pink">
+                  <use xlink:href="img/sprite.svg#logo-pink"></use>
+                </svg>
+                <svg class="logo__starred-glasses">
+                  <use xlink:href="img/sprite.svg#logo-starred-glasses"></use>
+                </svg>
+                <svg class="logo__stars">
+                  <use xlink:href="img/sprite.svg#logo-stars"></use>
+                </svg>
+                <svg class="logo__diacritic">
+                  <use xlink:href="img/sprite.svg#logo-diacritic"></use>
+                </svg>
+              </a>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </header>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--active">Главная</a>
