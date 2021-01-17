@@ -1,25 +1,12 @@
 .download {
-  padding-top: 90px;
-  background-color: $basic-color;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 50% bottom 270px, center top;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, 100% auto;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png"),
-      url("../img/bg-back-mobile@2x.jpg");
-    background-size: 255px 285px, 100% auto;
-  }
-
   @media #{$tablet-min} {
-    padding-top: 210px;
-    padding-bottom: 98px;
+    padding-top: 205px;
+    padding-bottom: 97px;
     background-image: url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center top;
     background-size: 700px 545px, 1200px 730px;
+    background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"),
@@ -28,12 +15,12 @@
   }
 
   @media #{$desktop-min} {
-    padding-top: 215px;
-    padding-bottom: 110px;
+    padding-top: 210px;
+    padding-bottom: 107px;
     background-image: url("../img/iphone-hand-desktop@1x.png"),
       url("../img/bg-back-desktop@1x.jpg");
-    background-position: center bottom, center top 20px;
     background-size: 1050px 645px, 2560px 853px;
+    background-position: calc(50% + 70px) bottom, center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"),
@@ -43,9 +30,6 @@
 }
 
 .download__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 
   @media #{$tablet-min} {
     @include c620();
@@ -53,6 +37,29 @@
 
   @media #{$desktop-min} {
     @include c940();
+  }
+}
+
+.download__header {
+  padding-top: 90px;
+  min-height: 462px;
+  background-color: $basic-color;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position: calc(50% - 30px) bottom, center top;
+  background-repeat: no-repeat, no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+    background-size: 255px 285px, 320px 462px;
+  }
+
+  @media #{$tablet-min} {
+    padding-top: 0;
+    min-height: unset;
+    background-image: none;
+    background-color: transparent;
   }
 }
 
@@ -65,7 +72,6 @@
 
   @media #{$mobile-max} {
     @include c280;
-    margin-bottom: 315px;
   }
 
   @media #{$tablet-min} {
@@ -85,9 +91,8 @@
 
 .download__links {
   @media #{$mobile-max} {
-    width: 100%;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     background-color: $basic-dark;
   }
 
@@ -97,11 +102,7 @@
 }
 
 .download__links-wrapper {
-  display: flex;
   min-height: 224px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   @media #{$mobile-max} {
     @include c280;
@@ -131,10 +132,10 @@
 
 .download__markets {
   @include c;
-
+  width: 100%;
+  padding-left: 37px;
+  padding-right: 37px;
   display: flex;
-  min-width: 204px;
-  min-height: 50px;
   flex-wrap: wrap;
   align-items: center;
   align-self: stretch;
@@ -143,48 +144,30 @@
 
   @media #{$tablet-min} {
     margin-top: 47px;
-    margin-bottom: 7px;
+    margin-bottom: 25px;
+    padding: 0 48px;
   }
 
   @media #{$desktop-min} {
-    margin-top: 70px;
-    margin-bottom: 25px;
+    margin-top: 63px;
+    margin-bottom: 38px;
   }
 }
 
 .download__link {
-  position: relative;
+  &--microsoft {
+    padding-top: 10px;
 
-  &:not(:nth-child(3n)) {
-    margin-right: 35px;
+    @media #{$tablet-min} {
+      padding-top: 0;
+    }
   }
-}
 
-.download__link::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-}
-
-.download__link--apple::before {
-  background-image: url("../img/icon-apple.svg");
-  width: 47px;
-  height: 56px;
-}
-
-.download__link--android::before {
-  background-image: url("../img/icon-android.svg");
-  width: 43px;
-  height: 47px;
-}
-
-.download__link--microsoft::before {
-  background-image: url("../img/icon-microsoft.svg");
-  width: 44px;
-  height: 41px;
+  &--apple {
+    @media #{$desktop-min} {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .download__description {
@@ -192,6 +175,7 @@
   font-weight: 300;
 
   @media #{$tablet-min} {
+    margin-top: 0;
     font-size: 18px;
     line-height: 1.3;
   }
