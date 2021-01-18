@@ -5,7 +5,6 @@
 
   @media #{$tablet-min} {
     height: 375px;
-    margin-top: -5px;
   }
 
   @media #{$desktop-min} {
@@ -25,13 +24,13 @@
   margin-right: auto;
 
   @media #{$tablet-min} {
-    width: 768px;
-    height: 581px;
+    width: 660px;
+    height: 374px;
   }
 
   @media #{$desktop-min} {
-    width: 1440px;
-    height: 584px;
+    width: 1200px;
+    height: 502px;
   }
 }
 
@@ -45,4 +44,9 @@
   background-position: 50% 0, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto;
+
+  @media #{$tablet-min} {
+    top: 52%;
+    left: 47%;
+  }
 }

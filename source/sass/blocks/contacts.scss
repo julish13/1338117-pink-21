@@ -91,7 +91,9 @@
 
   @media #{$desktop-min} {
     @include c940;
-    align-items: flex-start;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: start;
     margin-top: 10px;
   }
 }
@@ -120,6 +122,7 @@
   &--email {
     @media #{$desktop-min} {
       order: 1;
+      justify-self: end;
     }
 
     a {
@@ -132,6 +135,12 @@
       &:active {
         color: transparentize($basic-color, 0.7);
       }
+    }
+  }
+
+  &--telephone {
+    @media #{$desktop-min} {
+      justify-self: start;
     }
   }
 }
@@ -147,13 +156,13 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   content: "";
+
+  @media #{$desktop-min} {
+    background-size: 100% 97px;
+  }
 }
 
 .contacts__map {
   width: 100%;
-
-  @media #{$tablet-min} {
-    margin-top: -5px;
-  }
 }
 

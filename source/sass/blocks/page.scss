@@ -23,11 +23,11 @@
 
   @media #{$tablet-min} {
     @include c620;
-    padding-top: 40px;
+    padding-top: 34px;
   }
 
   @media #{$desktop-min} {
     @include c940;
-    padding-top: 65px;
+    padding-top: 68px;
   }
 }

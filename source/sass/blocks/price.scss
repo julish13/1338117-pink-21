@@ -32,7 +32,7 @@
 
 .price__option {
   position: relative;
-  padding: 12px 0 29px 0;
+  padding: 12px 5px 29px;
   border-right: 2px solid $grey-95;
   border-left: 2px solid $grey-95;
   background-color: $basic-color;
@@ -47,7 +47,8 @@
   }
 
   @media #{$desktop-min} {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
+    padding-top: 16px;
     font-size: 18px;
   }
 

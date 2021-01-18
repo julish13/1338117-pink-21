@@ -2,6 +2,10 @@
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
   grid-gap: 10px;
+
+  @media #{$desktop-min} {
+    grid-gap: 8px;
+  }
 }
 
 .social__link {

@@ -81,6 +81,10 @@
     font-size: 18px;
     line-height: 1.67;
   }
+
+  @media #{$desktop-min} {
+    margin-bottom: 38px;
+  }
 }
 
 .reviews__toggles {
@@ -106,7 +110,7 @@
 
 .reviews__options {
   position: absolute;
-  top: 56%;
+  top: 55%;
 
   @media #{$tablet-max} {
     display: none;
