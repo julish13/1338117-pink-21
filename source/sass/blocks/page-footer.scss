@@ -1,7 +1,8 @@
 .page-footer {
   @media #{$tablet-min} {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
   }
 }
 
@@ -13,12 +14,18 @@
 
   @media #{$tablet-min} {
     margin: 0;
+    justify-self: center;
   }
 }
 
 .page-footer__copyright {
   @media #{$mobile-max} {
     @include c280;
+  }
+
+  @media #{$tablet-min} {
+    justify-self: end;
+    margin: 0;
   }
 }
 
@@ -27,4 +34,9 @@
   margin-right: auto;
   margin-bottom: 38px;
   width: fit-content;
+
+  @media #{$tablet-min} {
+    margin: 0;
+    align-self: start;
+  }
 }
