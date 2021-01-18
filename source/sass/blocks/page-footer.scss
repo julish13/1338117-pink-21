@@ -1,0 +1,21 @@
+.page-footer {
+  @media #{$tablet-min} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  margin-top: 45px;
+  margin-bottom: 28px;
+
+  @media #{$tablet-min} {
+    margin: 0;
+  }
+}
+
+.page-footer__copyright {
+  @media #{$mobile-max} {
+    @include c280;
+  }
+}

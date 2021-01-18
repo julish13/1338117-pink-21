@@ -1,21 +1,10 @@
 .price {
   position: relative;
-  padding-top: 113px;
-  padding-bottom: 48px;
   background-color: $grey-95;
   background-image: url("../img/bg-triangle-white.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 150% auto;
-
-  @media #{$tablet-min} {
-    padding-bottom: 28px;
-  }
-
-  @media #{$desktop-min} {
-    padding-top: 175px;
-    padding-bottom: 60px;
-  }
 }
 
 .price__list {

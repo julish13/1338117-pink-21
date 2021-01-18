@@ -1,0 +1,58 @@
+.main {
+  background-color: $basic-white;
+}
+
+.main-index__download {
+  @media #{$tablet-min} {
+    padding-top: 205px;
+    padding-bottom: 97px;
+  }
+
+  @media #{$desktop-min} {
+    padding-top: 210px;
+    padding-bottom: 107px;
+  }
+}
+
+.main-index__reviews {
+  @include c280;
+  padding-top: 42px;
+  padding-bottom: 28px;
+
+  @media #{$tablet-min} {
+    @include c620;
+    padding-bottom: 0;
+  }
+
+  @media #{$desktop-min} {
+    @include c940;
+    padding-top: 165px;
+    padding-bottom: 20px;
+  }
+}
+
+.main__index__price {
+  padding-top: 113px;
+  padding-bottom: 48px;
+
+  @media #{$tablet-min} {
+    padding-bottom: 28px;
+  }
+
+  @media #{$desktop-min} {
+    padding-top: 175px;
+    padding-bottom: 60px;
+  }
+}
+
+.main-index__contacts {
+  padding-top: 40px;
+
+  @media #{$tablet-min} {
+    padding-top: 45px;
+  }
+
+  @media #{$desktop-min} {
+    padding-top: 57px;
+  }
+}

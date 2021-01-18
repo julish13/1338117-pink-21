@@ -1,14 +1,5 @@
 .contacts {
-  padding-top: 40px;
   background-color: $basic-white;
-
-  @media #{$tablet-min} {
-    padding-top: 45px;
-  }
-
-  @media #{$desktop-min} {
-    padding-top: 57px;
-  }
 }
 
 .contacts__wrapper {

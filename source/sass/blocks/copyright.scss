@@ -2,10 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media #{$mobile-max} {
-    @include c280;
-  }
 }
 
 .copyright__text {

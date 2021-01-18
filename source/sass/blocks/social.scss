@@ -1,11 +1,5 @@
 .social {
   display: flex;
-  margin-top: 45px;
-  margin-bottom: 28px;
-
-  @media #{$tablet-min} {
-    margin: 0;
-  }
 }
 
 .social__link {

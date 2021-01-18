@@ -1,18 +1,6 @@
 .reviews {
-  @include c280;
-  padding-top: 42px;
-  padding-bottom: 28px;
-
-  @media #{$tablet-min} {
-    @include c620;
-    padding-bottom: 0;
-  }
-
   @media #{$desktop-min} {
-    @include c940;
     position: relative;
-    padding-top: 165px;
-    padding-bottom: 20px;
   }
 }
 
