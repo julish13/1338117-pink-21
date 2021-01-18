@@ -1,6 +1,16 @@
 .main-nav {
-  position: absolute;
   width: 100%;
+
+  &--opened,
+  &--closed {
+    position: absolute;
+  }
+
+  &--nojs {
+    @media #{$desktop-min} {
+      position: absolute;
+    }
+  }
 }
 
 .main-nav__layer {
@@ -41,12 +51,18 @@
     margin-right: 172px;
   }
 
-  .main-nav--opened & {
+  .main-nav--opened &,
+  .main-nav--nojs & {
     padding: 22px 20px;
     background-color: $basic-color;
 
     @media #{$tablet-min} {
       padding: 27px 20px 41px;
+    }
+
+    @media #{$desktop-min} {
+      padding: 0;
+      background-color: transparent;
     }
   }
 }

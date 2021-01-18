@@ -13,9 +13,15 @@
 }
 
 .slider__toggles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &--js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .slider__toggle {
