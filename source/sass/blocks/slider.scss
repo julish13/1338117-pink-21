@@ -1,8 +1,14 @@
 .slider__slide {
-  display: none;
+  &--js {
+    display: none;
+  }
 
   &--current {
-    display: flex;
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
   }
 }
 
