@@ -1,11 +1,13 @@
-.copyright {
+.copyright__link {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 5px;
+  color: inherit;
 }
 
 .copyright__text {
-  margin-right: 5px;
+  margin-right: 8px;
   line-height: 1.29;
 
   @media #{$desktop-min} {
@@ -15,17 +17,13 @@
 }
 
 .copyright__icon {
-  vertical-align: bottom;
+  fill: $basic-pink;
 
-  use {
-    fill: $basic-pink;
+  &:hover {
+    fill: $basic-color;
+  }
 
-    &:hover {
-      fill: $basic-color;
-    }
-
-    &:active {
-      fill: transparentize($basic-color, 0.7);
-    }
+  &:active {
+    fill: transparentize($basic-color, 0.7);
   }
 }

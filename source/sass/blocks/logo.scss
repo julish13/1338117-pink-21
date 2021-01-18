@@ -10,10 +10,6 @@
 .logo--header {
   .logo__pink {
     fill: $basic-white;
-
-    @media #{$desktop-min} {
-      left: 70px;
-    }
   }
 
   .logo__glasses {
@@ -54,80 +50,43 @@
 }
 
 .logo--footer {
-  width: 145px;
-  height: 40px;
-
   .logo__pink {
-    top: 20px;
-
-    @media #{$tablet-min} {
-      top: 10px;
-      left: 70px;
-    }
-
-    @media #{$desktop-min} {
-      top: 10px;
-      left: 72px;
-    }
-
-    use {
-      fill: $basic-color;
-    }
+    fill: $basic-color;
   }
 
   .logo__glasses {
-    top: 5px;
     display: block;
-
-    @media #{$tablet-min} {
-      top: -10px;
-    }
+    fill: $basic-pink;
 
     @media #{$desktop-min} {
       display: none;
-    }
-
-    use {
-      fill: $basic-pink;
     }
   }
 
   .logo__starred-glasses {
     display: none;
+    fill: $basic-pink;
 
     @media #{$desktop-min} {
-      top: -5px;
       display: block;
-    }
-
-    use {
-      fill: $basic-pink;
     }
   }
 
   .logo__stars {
     display: none;
+    fill: $basic-color;
 
     @media #{$desktop-min} {
-      top: -5px;
       display: block;
-    }
-
-    use {
-      fill: $basic-color;
     }
   }
 
   .logo__diacritic {
     display: none;
+    fill: $basic-pink;
 
     @media #{$desktop-min} {
-      left: 90px;
       display: block;
-    }
-
-    use {
-      fill: $basic-pink;
     }
   }
 }

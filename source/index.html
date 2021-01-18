@@ -306,13 +306,45 @@
             </div>
           </dl>
         </div>
-        <div class="contacts__map" id="map">
-          <div class="contacts__map-pin" id="pin"></div>
+        <div class="contacts__map map map--nojs" id="map">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1200px)"
+              srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 660px)"
+              srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x"
+            />
+            <source
+              media="(min-width: 660px)"
+              srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x"
+            />
+            <img
+              class="map__picture map__picture--nojs"
+              width="320"
+              height="200"
+              src="img/content/map-mobile@1x.png"
+              srcset="img/content/map-mobile@2x.png 2x"
+              alt="ул. Большая Конюшенная, 19/8"
+            />
+          </picture>
+          <div class="map__pin" id="pin"></div>
         </div>
       </section>
     </main>
     <footer class="page__footer page-footer">
-      <a class="logo logo--footer">
+      <a class="page-footer__logo logo logo--footer">
         <svg class="logo__glasses">
           <use xlink:href="img/sprite.svg#logo-glasses"></use>
         </svg>
@@ -359,12 +391,12 @@
         </a>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="HTML Academy"
         >
+          <span class="copyright__text">Разработано</span>
           <svg class="copyright__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>

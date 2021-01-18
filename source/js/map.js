@@ -1,7 +1,10 @@
 "use strict";
 
 function initMap() {
-  const mapPin = document.querySelector("#pin");
+  const mapElement = document.querySelector(`.map`);
+  const mapPin = mapElement.querySelector("#pin");
+
+  mapElement.classList.remove(`map--nojs`);
   mapPin.classList.add("visually-hidden");
   const location = { lat: 59.938891, lng: 30.323037 };
 

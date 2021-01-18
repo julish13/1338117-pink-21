@@ -6,8 +6,10 @@
 }
 
 .page-footer__social {
-  margin-top: 45px;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 
   @media #{$tablet-min} {
     margin: 0;
@@ -18,4 +20,11 @@
   @media #{$mobile-max} {
     @include c280;
   }
+}
+
+.page-footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+  width: fit-content;
 }
