@@ -32,7 +32,7 @@
 
 .price__option {
   position: relative;
-  padding: 15px 0 25px 0;
+  padding: 12px 0 25px 0;
   border-right: 2px solid $grey-95;
   border-left: 2px solid $grey-95;
   background-color: $basic-color;
@@ -93,6 +93,10 @@
   &:not(&--hit) {
     z-index: 1;
   }
+}
+
+.price__name {
+  
 }
 
 .price__usd {
