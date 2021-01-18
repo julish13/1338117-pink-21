@@ -167,15 +167,15 @@
 .main-nav__link {
   position: relative;
   display: block;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top: 1px solid transparentize($basic-white, 0.7);
   border-bottom: 1px solid $basic-black;
   background-color: $basic-color;
   color: $basic-white;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.78;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -193,6 +193,7 @@
     border: none;
     padding: 0;
     background-color: transparent;
+    line-height: 1;
     font-weight: normal;
     text-transform: none;
 

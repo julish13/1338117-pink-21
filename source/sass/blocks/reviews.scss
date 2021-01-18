@@ -43,7 +43,7 @@
 
   @media #{$desktop-min} {
     font-size: 18px;
-    line-height: 1;
+    line-height: 1.67;
   }
 }
 
@@ -51,6 +51,7 @@
   margin-bottom: 13px;
   color: $basic-black;
   font-size: 18px;
+  line-height: 1.67;
   font-style: normal;
   font-weight: bold;
 
@@ -64,6 +65,7 @@
 
   @media #{$desktop-min} {
     font-size: 24px;
+    line-height: 1.25;
   }
 }
 
@@ -76,7 +78,7 @@
     margin-top: 20px;
     margin-bottom: 33px;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.67;
   }
 }
 

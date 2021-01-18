@@ -6,9 +6,11 @@
 
 .copyright__text {
   margin-right: 5px;
+  line-height: 1.29;
 
   @media #{$desktop-min} {
     font-size: 18px;
+    line-height: 1;
   }
 }
 
