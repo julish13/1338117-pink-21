@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main class="main main--form">
+    <main class="page__main-form main-form">
       <div class="page-headline page-headline--form">
         <h1 class="page-headline__text">
           Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
@@ -97,8 +97,8 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--name">
             <div class="form__fieldset-wrapper form__fieldset-wrapper--name">
-              <div class="form__item">
-                <label for="surname" class="form__label-text">Фамилия:</label>
+              <div class="form__fieldset-item form__fieldset-item--name">
+                <label for="surname" class="form__label-text form__label-text--name">Фамилия:</label>
                 <input
                   class="form__input-text"
                   type="text"
@@ -108,8 +108,8 @@
                   required
                 />
               </div>
-              <div class="form__item">
-                <label for="name" class="form__label-text">Имя:</label>
+              <div class="form__fieldset-item form__fieldset-item--name">
+                <label for="name" class="form__label-text form__label-text--name">Имя:</label>
                 <input
                   class="form__input-text"
                   type="text"
@@ -119,8 +119,8 @@
                   required
                 />
               </div>
-              <div class="form__item">
-                <label for="patronymic" class="form__label-text">Отчество:</label>
+              <div class="form__fieldset-item form__fieldset-item--name">
+                <label for="patronymic" class="form__label-text form__label-text--name">Отчество:</label>
                 <input
                   class="form__input-text"
                   type="text"
@@ -132,59 +132,75 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--achievements">
-            <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="form__legend form__legend--achievements">
+              <span class="form__legend-text">Ваши безбашенные достижения в путешествии</span>
+            </legend>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--achievements">
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="shark_selfie"
-                id="shark_selfie"
-                checked
-              />
-              <label for="shark_selfie" class="form__label-checkbox">Сделал селфи с акулой</label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="burned_out"
-                id="burned_out"
-                checked
-              />
-              <label for="burned_out" class="form__label-checkbox">Обгорел на пляже</label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="chak_norris"
-                id="chak_norris"
-              />
-              <label for="chak_norris" class="form__label-checkbox">Видел Чака Норриса</label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="souvenirs"
-                id="souvenirs"
-              />
-              <label for="souvenirs" class="form__label-checkbox">Накупил сувениров</label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="tower"
-                id="tower"
-                checked
-              />
-              <label for="tower" class="form__label-checkbox">Удержал башню</label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="hotel"
-                id="hotel"
-              />
-              <label for="hotel" class="form__label-checkbox">Разгромил отель</label>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="shark_selfie"
+                  id="shark_selfie"
+                  checked
+                />
+                <label for="shark_selfie" class="form__label-checkbox">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="burned_out"
+                  id="burned_out"
+                  checked
+                />
+                <label for="burned_out" class="form__label-checkbox">Обгорел на пляже</label>
+              </div>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="chak_norris"
+                  id="chak_norris"
+                />
+                <label for="chak_norris" class="form__label-checkbox">Видел Чака Норриса</label>
+              </div>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="souvenirs"
+                  id="souvenirs"
+                />
+                <label for="souvenirs" class="form__label-checkbox">Накупил сувениров</label>
+              </div>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="tower"
+                  id="tower"
+                  checked
+                />
+                <label for="tower" class="form__label-checkbox">Удержал башню</label>
+              </div>
+              <div class="form__fieldset-item--achievements">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="hotel"
+                  id="hotel"
+                />
+                <label for="hotel" class="form__label-checkbox">Разгромил отель</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <legend class="form__legend form__legend--contacts">
+              <span class="form__legend-text">Контактная информация</span>
+            </legend>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
-              <div class="form__item">
+              <div class="form__fieldset-item form__fieldset-item--contacts">
                 <label for="surname" class="form__label-text">Номер телефона</label>
                 <input
                   class="form__input-text"
@@ -194,7 +210,7 @@
                   placeholder="Номер, пожалуйста"
                 />
               </div>
-              <div class="form__item">
+              <div class="form__fieldset-item form__fieldset-item--contacts">
                 <label for="email" class="form__label-text">Адрес почты</label>
                 <input
                   class="form__input-text"
@@ -208,37 +224,45 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--app">
-            <legend class="form__legend form__legend--app">С каким приложением путешествовали?</legend>
+            <legend class="form__legend form__legend--app">
+              <span class="form__legend-text">С каким приложением путешествовали?</span>
+            </legend>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--app">
-              <input
-                class="visually-hidden"
-                type="radio"
-                name="application"
-                id="ios"
-                value="ios"
-                checked
-              />
-              <label for="ios" class="form__label-radio">Pink для iOS</label>
-              <input
-                class="visually-hidden"
-                type="radio"
-                name="application"
-                id="android"
-                value="android"
-              />
-              <label for="android" class="form__label-radio">Pink на Android</label>
-              <input
-                class="visually-hidden"
-                type="radio"
-                name="application"
-                id="windows"
-                value="windows"
-              />
-              <label for="windows" class="form__label-radio">Windows Phone</label>
+              <div class="form__fieldset-item--app">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="application"
+                  id="ios"
+                  value="ios"
+                  checked
+                />
+                <label for="ios" class="form__label-radio">Pink для iOS</label>
+              </div>
+              <div class="form__fieldset-item--app">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="application"
+                  id="android"
+                  value="android"
+                />
+                <label for="android" class="form__label-radio">Pink на Android</label>
+              </div>
+              <div class="form__fieldset-item--app">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="application"
+                  id="windows"
+                  value="windows"
+                />
+                <label for="windows" class="form__label-radio">Windows Phone</label>
+              </div>
             </div>
           </fieldset>
           <div class="form__fieldset form__fieldset--textarea">
-            <h3>Опишите свои эмоции</h3>
+            <h3 class="form__legend form__legend--textarea">Опишите свои эмоции</h3>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--textarea">
               <textarea
                 class="form__textarea"
@@ -253,7 +277,7 @@
               value="Отправить форму"
             />
             <p class="form__reference">
-              <sup>*</sup> — обязательные <span>для заполнения </span>поля
+              <span class="form__reference-pink">*</span> — обязательные <span class="form__reference-desktop">для заполнения </span>поля
             </p>
           </div>
         </form>
