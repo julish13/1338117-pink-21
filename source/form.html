@@ -34,11 +34,11 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__main-nav main-nav main-nav--nojs">
         <div class="main-nav__layer">
           <div class="main-nav__wrapper">
-            <header class="main-nav__header">
-              <a class="logo logo--header main-nav__logo">
+            <div class="main-nav__header">
+              <a class="logo logo--header main-nav__logo" href="index.html">
                 <svg class="logo__glasses">
                   <use xlink:href="img/sprite.svg#logo-glasses"></use>
                 </svg>
@@ -58,7 +58,7 @@
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
-            </header>
+            </div>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -256,8 +256,8 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <a class="logo logo--footer">
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo logo logo--footer" href="index.html">
         <svg class="logo__glasses">
           <use xlink:href="img/sprite.svg#logo-glasses"></use>
         </svg>
@@ -274,7 +274,7 @@
           <use xlink:href="img/sprite.svg#logo-diacritic"></use>
         </svg>
       </a>
-      <div class="social">
+      <div class="page-footer__social social">
         <a
           class="social__link social__link--twitter"
           href="#"
@@ -303,14 +303,14 @@
           </svg>
         </a>
       </div>
-      <div class="copyright">
-        <p class="copyright__text">Разработано:</p>
+      <div class="page-footer__copyright copyright">
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="HTML Academy"
         >
-          <svg class="copyright__icon" width="40" height="40">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
