@@ -96,10 +96,11 @@
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--name">
-            <div class="form__fieldset-wrapper">
-              <div class="form__text">
-                <label for="surname">Фамилия:</label>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--name">
+              <div class="form__item">
+                <label for="surname" class="form__label-text">Фамилия:</label>
                 <input
+                  class="form__input-text"
                   type="text"
                   name="surname"
                   id="surname"
@@ -107,9 +108,10 @@
                   required
                 />
               </div>
-              <div class="form__text">
-                <label for="name">Имя:</label>
+              <div class="form__item">
+                <label for="name" class="form__label-text">Имя:</label>
                 <input
+                  class="form__input-text"
                   type="text"
                   name="name"
                   id="name"
@@ -117,9 +119,10 @@
                   required
                 />
               </div>
-              <div class="form__text">
-                <label for="patronymic">Отчество:</label>
+              <div class="form__item">
+                <label for="patronymic" class="form__label-text">Отчество:</label>
                 <input
+                  class="form__input-text"
                   type="text"
                   name="patronymic"
                   id="patronymic"
@@ -129,8 +132,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--achievements">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form__fieldset-wrapper">
+            <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--achievements">
               <input
                 class="visually-hidden"
                 type="checkbox"
@@ -138,7 +141,7 @@
                 id="shark_selfie"
                 checked
               />
-              <label for="shark_selfie">Сделал селфи с акулой</label>
+              <label for="shark_selfie" class="form__label-checkbox">Сделал селфи с акулой</label>
               <input
                 class="visually-hidden"
                 type="checkbox"
@@ -146,21 +149,21 @@
                 id="burned_out"
                 checked
               />
-              <label for="burned_out">Обгорел на пляже</label>
+              <label for="burned_out" class="form__label-checkbox">Обгорел на пляже</label>
               <input
                 class="visually-hidden"
                 type="checkbox"
                 name="chak_norris"
                 id="chak_norris"
               />
-              <label for="chak_norris">Видел Чака Норриса</label>
+              <label for="chak_norris" class="form__label-checkbox">Видел Чака Норриса</label>
               <input
                 class="visually-hidden"
                 type="checkbox"
                 name="souvenirs"
                 id="souvenirs"
               />
-              <label for="souvenirs">Накупил сувениров</label>
+              <label for="souvenirs" class="form__label-checkbox">Накупил сувениров</label>
               <input
                 class="visually-hidden"
                 type="checkbox"
@@ -168,31 +171,33 @@
                 id="tower"
                 checked
               />
-              <label for="tower">Удержал башню</label>
+              <label for="tower" class="form__label-checkbox">Удержал башню</label>
               <input
                 class="visually-hidden"
                 type="checkbox"
                 name="hotel"
                 id="hotel"
               />
-              <label for="hotel">Разгромил отель</label>
+              <label for="hotel" class="form__label-checkbox">Разгромил отель</label>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend">Контактная информация</legend>
-            <div class="form__fieldset-wrapper">
-              <div class="form__text">
-                <label for="surname">Номер телефона</label>
+            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
+              <div class="form__item">
+                <label for="surname" class="form__label-text">Номер телефона</label>
                 <input
+                  class="form__input-text"
                   type="tel"
                   name="phone"
                   id="phone"
                   placeholder="Номер, пожалуйста"
                 />
               </div>
-              <div class="form__text">
-                <label for="email">Адрес почты</label>
+              <div class="form__item">
+                <label for="email" class="form__label-text">Адрес почты</label>
                 <input
+                  class="form__input-text"
                   type="email"
                   name="email"
                   id="email"
@@ -203,8 +208,8 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--app">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
-            <div class="form__fieldset-wrapper">
+            <legend class="form__legend form__legend--app">С каким приложением путешествовали?</legend>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--app">
               <input
                 class="visually-hidden"
                 type="radio"
@@ -213,7 +218,7 @@
                 value="ios"
                 checked
               />
-              <label for="ios">Pink для iOS</label>
+              <label for="ios" class="form__label-radio">Pink для iOS</label>
               <input
                 class="visually-hidden"
                 type="radio"
@@ -221,7 +226,7 @@
                 id="android"
                 value="android"
               />
-              <label for="android">Pink на Android</label>
+              <label for="android" class="form__label-radio">Pink на Android</label>
               <input
                 class="visually-hidden"
                 type="radio"
@@ -229,17 +234,18 @@
                 id="windows"
                 value="windows"
               />
-              <label for="windows">Windows Phone</label>
+              <label for="windows" class="form__label-radio">Windows Phone</label>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--textarea">
-            <legend>Опишите свои эмоции</legend>
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset form__fieldset--textarea">
+            <h3>Опишите свои эмоции</h3>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--textarea">
               <textarea
+                class="form__textarea"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"
               ></textarea>
             </div>
-          </fieldset>
+          </div>
           <div class="form__send">
             <input
               class="button-square form__button"
