@@ -25,6 +25,7 @@
 }
 
 .slider__toggle {
+  cursor: pointer;
   width: 6px;
   height: 6px;
   box-sizing: content-box;
@@ -35,6 +36,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     background-color: transparentize($basic-color, 0.4);
   }
 

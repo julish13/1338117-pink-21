@@ -1,4 +1,5 @@
 .logo {
+  cursor: pointer;
   display: flex;
   align-items: flex-end;
 
@@ -8,6 +9,23 @@
 }
 
 .logo--header {
+  &:hover,
+  &:focus {
+    .logo__pink,
+    .logo__glasses,
+    .logo__starred-glasses {
+      fill: $basic-pink;
+    }
+  }
+
+  &:active {
+    .logo__pink,
+    .logo__glasses,
+    .logo__starred-glasses {
+      fill: rgba($basic-white, 0.3);
+    }
+  }
+
   .logo__pink {
     fill: $basic-white;
   }
@@ -50,6 +68,24 @@
 }
 
 .logo--footer {
+  &:hover,
+  &:focus {
+    .logo__pink {
+      fill: $basic-pink;
+    }
+  }
+
+  &:active {
+    .logo__pink {
+      fill: rgba($basic-color, 0.3);
+    }
+
+    .logo__glasses,
+    .logo__starred-glasses {
+      opacity: 0.3;
+    }
+  }
+
   .logo__pink {
     fill: $basic-color;
   }
