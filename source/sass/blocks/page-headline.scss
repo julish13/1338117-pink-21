@@ -58,6 +58,7 @@
   @media #{$tablet-min} {
     @include c620;
     font-size: 50px;
+    line-height: 1.36;
   }
 
   @media #{$desktop-min} {
