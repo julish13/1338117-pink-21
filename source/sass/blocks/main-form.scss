@@ -1,0 +1,23 @@
+.main-form__page-headline {
+  padding-top: 77px;
+  padding-bottom: 29px;
+
+  @media #{$tablet-min} {
+    padding-top: 155px;
+    padding-bottom: 25px;
+  }
+
+  @media #{$desktop-min} {
+    padding-top: 136px;
+    padding-bottom: 60px;
+  }
+}
+
+.main-form__competition {
+  padding-top: 45px;
+
+  @media #{$tablet-min} {
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+}

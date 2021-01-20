@@ -30,22 +30,6 @@
     }
   }
 
-  &--form {
-    padding-top: 77px;
-    padding-bottom: 29px;
-
-    @media #{$tablet-min} {
-      padding-top: 155px;
-      padding-bottom: 25px;
-      background-position: center top 10px;
-    }
-
-    @media #{$desktop-min} {
-      padding-top: 136px;
-      padding-bottom: 60px;
-    }
-  }
-
   .main--photo & {
     @media #{$mobile-max} {
       padding-top: 80px;

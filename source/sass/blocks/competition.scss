@@ -1,11 +1,5 @@
 .competition {
-  padding-top: 45px;
   background-color: $basic-white;
-
-  @media #{$tablet-min} {
-    padding-top: 90px;
-    padding-bottom: 45px;
-  }
 }
 
 .competition__intro-wrapper {
@@ -37,5 +31,17 @@
 
   @media #{$desktop-min} {
     display: inline;
+  }
+}
+
+.competition__form {
+  @media #{$tablet-min} {
+    @include c620;
+    padding-top: 70px;
+  }
+
+  @media #{$desktop-min} {
+    @include c940;
+    padding-top: 80px;
   }
 }

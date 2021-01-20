@@ -6,17 +6,10 @@
   line-height: 1.7;
   text-align: left;
 
-  @media #{$tablet-min} {
-    @include c620;
-    padding-top: 70px;
-  }
-
   @media #{$desktop-min} {
-    @include c940;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 80px;
   }
 }
 
