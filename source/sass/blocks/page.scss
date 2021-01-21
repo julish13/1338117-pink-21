@@ -34,4 +34,8 @@
 
 .page__main-form {
   padding-bottom: 15px;
+
+  @media #{$tablet-min} {
+    padding-bottom: 52px;
+  }
 }

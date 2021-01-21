@@ -100,7 +100,7 @@
               <div class="form__fieldset-item form__fieldset-item--name">
                 <label for="surname" class="form__label-text form__label-text--name">Фамилия:</label>
                 <input
-                  class="form__input-text"
+                  class="form__input-text form__input-text--name"
                   type="text"
                   name="surname"
                   id="surname"
@@ -111,7 +111,7 @@
               <div class="form__fieldset-item form__fieldset-item--name">
                 <label for="name" class="form__label-text form__label-text--name">Имя:</label>
                 <input
-                  class="form__input-text"
+                  class="form__input-text form__input-text--name"
                   type="text"
                   name="name"
                   id="name"
@@ -122,7 +122,7 @@
               <div class="form__fieldset-item form__fieldset-item--name">
                 <label for="patronymic" class="form__label-text form__label-text--name">Отчество:</label>
                 <input
-                  class="form__input-text"
+                  class="form__input-text form__input-text--name"
                   type="text"
                   name="patronymic"
                   id="patronymic"
@@ -200,20 +200,20 @@
               <span class="form__legend-text">Контактная информация</span>
             </legend>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
-              <div class="form__fieldset-item form__fieldset-item--contacts">
-                <label for="surname" class="form__label-text">Номер телефона</label>
+              <div class="form__fieldset-item form__fieldset-item--contacts form__fieldset-item--phone">
+                <label for="surname" class="form__label-text form__label-text--contacts">Номер телефона</label>
                 <input
-                  class="form__input-text"
+                  class="form__input-text form__input-text--contacts"
                   type="tel"
                   name="phone"
                   id="phone"
                   placeholder="Номер, пожалуйста"
                 />
               </div>
-              <div class="form__fieldset-item form__fieldset-item--contacts">
-                <label for="email" class="form__label-text">Адрес почты</label>
+              <div class="form__fieldset-item form__fieldset-item--contacts form__fieldset-item--email">
+                <label for="email" class="form__label-text form__label-text--contacts">Адрес почты</label>
                 <input
-                  class="form__input-text"
+                  class="form__input-text form__input-text--contacts"
                   type="email"
                   name="email"
                   id="email"
@@ -262,13 +262,13 @@
             </div>
           </fieldset>
           <div class="form__fieldset form__fieldset--textarea">
-            <h3 class="form__legend form__legend--textarea">Опишите свои эмоции</h3>
-            <div class="form__fieldset-wrapper form__fieldset-wrapper--textarea">
-              <textarea
-                class="form__textarea"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"
-              ></textarea>
-            </div>
+            <label class="form__legend form__legend--textarea" for="story">Опишите свои эмоции</label>
+            <textarea
+              id="story"
+              name="story"
+              class="form__textarea"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"
+            ></textarea>
           </div>
           <div class="form__send">
             <input
