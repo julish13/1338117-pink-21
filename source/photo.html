@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main class="main main-photo">
+    <main class="page__main-photo main-photo">
       <div class="main-photo__page-headline page-headline">
         <h1 class="page-headline__text">Фотографии пользователей</h1>
       </div>
@@ -90,7 +90,7 @@
           Видите, как не&nbsp;хватает ваших?
         </p>
         <div class="pictures__item pictures__item--day-choice">
-          <a class="pictures__image" href="#">
+          <a class="pictures__photo-wrapper pictures__photo-wrapper--day-choice" href="#">
             <picture>
               <source
                 media="(min-width: 1200px)"
@@ -107,6 +107,7 @@
                 "
               />
               <img
+                class="pictures__photo pictures__photo--day-choice"
                 src="img/content/panorama-mobile@1x.jpg"
                 srcset="img/content/panorama-mobile@2x.jpg 2x"
                 alt="Панорамное изображение леса сверху"
@@ -132,7 +133,7 @@
         </div>
         <ul class="pictures__wrapper">
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -149,6 +150,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-car-mobile@1x.jpg"
                   srcset="img/content/photo-car-mobile@2x.jpg 2x"
                   alt="Фото машины"
@@ -174,7 +176,7 @@
             </div>
           </li>
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -191,6 +193,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-drumset-mobile@1x.jpg"
                   srcset="img/content/photo-drumset-mobile@2x.jpg 2x"
                   alt="Фото барабанной установки"
@@ -213,7 +216,7 @@
             </div>
           </li>
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -230,6 +233,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-window-mobile@1x.jpg"
                   srcset="img/content/photo-window-mobile@2x.jpg 2x"
                   alt="Фото стеклянной крыши снизу"
@@ -254,7 +258,7 @@
             </div>
           </li>
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -271,6 +275,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-fair-mobile@1x.jpg"
                   srcset="img/content/photo-fair-mobile@2x.jpg 2x"
                   alt="Фото ярмарки"
@@ -293,7 +298,7 @@
             </div>
           </li>
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -310,6 +315,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-pov-mobile@1x.jpg"
                   srcset="img/content/photo-pov-mobile@2x.jpg 2x"
                   alt="Фото ног на горном склоне"
@@ -332,7 +338,7 @@
             </div>
           </li>
           <li class="pictures__item">
-            <a class="pictures__image" href="#">
+            <a class="pictures__photo-wrapper" href="#">
               <picture>
                 <source
                   media="(min-width: 1200px)"
@@ -349,6 +355,7 @@
                   "
                 />
                 <img
+                  class="pictures__photo"
                   src="img/content/photo-wing-mobile@1x.jpg"
                   srcset="img/content/photo-wing-mobile@2x.jpg 2x"
                   alt="Фото крыла самолета в небе"
@@ -399,9 +406,12 @@
                   "
                 />
                 <img
+                  class="try__photo"
                   src="img/content/photo-road-mobile@1x.jpg"
                   srcset="img/content/photo-road-mobile@2x.jpg 2x"
                   alt="Фото изображающее зимнюю дорогу"
+                  width="280"
+                  height="374"
                 />
               </picture>
             </label>

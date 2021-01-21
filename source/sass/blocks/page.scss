@@ -43,3 +43,9 @@
     padding-bottom: 3px;
   }
 }
+
+.page__main-photo {
+  @media #{$tablet-min} {
+    padding-bottom: 5px;
+  }
+}

@@ -1,6 +1,11 @@
 .main-photo__page-headline {
   padding-top: 94px;
   padding-bottom: 77px;
+
+  @media #{$tablet-min} {
+    padding-top: 177px;
+    padding-bottom: 127px;
+  }
 }
 
 .main-photo__pictures {
@@ -8,8 +13,8 @@
   padding-bottom: 27px;
 
   @media #{$tablet-min} {
-    padding-top: 75px;
-    padding-bottom: 65px;
+    padding-top: 90px;
+    padding-bottom: 48px;
   }
 
   @media #{$desktop-min} {

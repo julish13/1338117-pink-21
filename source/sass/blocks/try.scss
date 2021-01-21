@@ -67,6 +67,13 @@
   }
 }
 
+.try__photo {
+  @media #{$tablet-min} {
+    width: 300px;
+    height: 400px;
+  }
+}
+
 .try__tools {
   @include c;
   display: grid;
@@ -158,6 +165,7 @@
       grid-column-start: 1;
       grid-row-end: 3;
       grid-row-start: 2;
+      padding-bottom: 5px;
     }
 
     svg {
@@ -208,6 +216,10 @@
   grid-column-start: 1;
   grid-row-end: 3;
   grid-row-start: 2;
+
+  @media #{$tablet-min} {
+    display: block;
+  }
 
   &--active {
     display: block;
