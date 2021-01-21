@@ -1,9 +1,5 @@
 .try {
   background-color: $basic-white;
-
-  @media #{$desktop-min} {
-    padding-bottom: 30px;
-  }
 }
 
 .try__file {

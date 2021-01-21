@@ -34,11 +34,11 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__main-nav main-nav main-nav--nojs">
         <div class="main-nav__layer">
           <div class="main-nav__wrapper">
-            <header class="main-nav__header">
-              <a class="logo logo--header main-nav__logo">
+            <div class="main-nav__header">
+              <a class="logo logo--header main-nav__logo" href="index.html">
                 <svg class="logo__glasses">
                   <use xlink:href="img/sprite.svg#logo-glasses"></use>
                 </svg>
@@ -58,7 +58,7 @@
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
-            </header>
+            </div>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -67,7 +67,7 @@
                 <a class="main-nav__link main-nav__link--active">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
+                <a class="main-nav__link main-nav__link--active" href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="https://htmlacademy.ru/"
@@ -79,11 +79,11 @@
         </div>
       </nav>
     </header>
-    <main class="main main--photo">
-      <div class="page-headline">
+    <main class="main main-photo">
+      <div class="main-photo__page-headline page-headline">
         <h1 class="page-headline__text">Фотографии пользователей</h1>
       </div>
-      <section class="pictures">
+      <section class="main-photo__pictures pictures">
         <h2 class="visually-hidden">Фотографии из приложения</h2>
         <p class="pictures__intro">
           Взгляните на&nbsp;фотографии, которые выкладывают пользователи!
@@ -95,20 +95,20 @@
               <source
                 media="(min-width: 1200px)"
                 srcset="
-                  img/panorama-desktop@1x.jpg,
-                  img/panorama-desktop@2x.jpg 2x
+                  img/content/panorama-desktop@1x.jpg,
+                  img/content/panorama-desktop@2x.jpg 2x
                 "
               />
               <source
                 media="(min-width: 660px)"
                 srcset="
-                  img/panorama-tablet@1x.jpg,
-                  img/panorama-tablet@2x.jpg 2x
+                  img/content/panorama-tablet@1x.jpg,
+                  img/content/panorama-tablet@2x.jpg 2x
                 "
               />
               <img
-                src="img/panorama-mobile@1x.jpg"
-                srcset="img/panorama-mobile@2x.jpg 2x"
+                src="img/content/panorama-mobile@1x.jpg"
+                srcset="img/content/panorama-mobile@2x.jpg 2x"
                 alt="Панорамное изображение леса сверху"
               />
             </picture>
@@ -137,20 +137,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-car-desktop@1x.jpg,
-                    img/photo-car-desktop@2x.jpg 2x
+                    img/content/photo-car-desktop@1x.jpg,
+                    img/content/photo-car-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-car-tablet@1x.jpg,
-                    img/photo-car-tablet@2x.jpg 2x
+                    img/content/photo-car-tablet@1x.jpg,
+                    img/content/photo-car-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-car-mobile@1x.jpg"
-                  srcset="img/photo-car-mobile@2x.jpg 2x"
+                  src="img/content/photo-car-mobile@1x.jpg"
+                  srcset="img/content/photo-car-mobile@2x.jpg 2x"
                   alt="Фото машины"
                 />
               </picture>
@@ -179,20 +179,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-drumset-desktop@1x.jpg,
-                    img/photo-drumset-desktop@2x.jpg 2x
+                    img/content/photo-drumset-desktop@1x.jpg,
+                    img/content/photo-drumset-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-drumset-tablet@1x.jpg,
-                    img/photo-drumset-tablet@2x.jpg 2x
+                    img/content/photo-drumset-tablet@1x.jpg,
+                    img/content/photo-drumset-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-drumset-mobile@1x.jpg"
-                  srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                  src="img/content/photo-drumset-mobile@1x.jpg"
+                  srcset="img/content/photo-drumset-mobile@2x.jpg 2x"
                   alt="Фото барабанной установки"
                 />
               </picture>
@@ -218,20 +218,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-window-desktop@1x.jpg,
-                    img/photo-window-desktop@2x.jpg 2x
+                    img/content/photo-window-desktop@1x.jpg,
+                    img/content/photo-window-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-window-tablet@1x.jpg,
-                    img/photo-window-tablet@2x.jpg 2x
+                    img/content/photo-window-tablet@1x.jpg,
+                    img/content/photo-window-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-window-mobile@1x.jpg"
-                  srcset="img/photo-window-mobile@2x.jpg 2x"
+                  src="img/content/photo-window-mobile@1x.jpg"
+                  srcset="img/content/photo-window-mobile@2x.jpg 2x"
                   alt="Фото стеклянной крыши снизу"
                 />
               </picture>
@@ -259,20 +259,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-fair-desktop@1x.jpg,
-                    img/photo-fair-desktop@2x.jpg 2x
+                    img/content/photo-fair-desktop@1x.jpg,
+                    img/content/photo-fair-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-fair-tablet@1x.jpg,
-                    img/photo-fair-tablet@2x.jpg 2x
+                    img/content/photo-fair-tablet@1x.jpg,
+                    img/content/photo-fair-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-fair-mobile@1x.jpg"
-                  srcset="img/photo-fair-mobile@2x.jpg 2x"
+                  src="img/content/photo-fair-mobile@1x.jpg"
+                  srcset="img/content/photo-fair-mobile@2x.jpg 2x"
                   alt="Фото ярмарки"
                 />
               </picture>
@@ -298,20 +298,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-pov-desktop@1x.jpg,
-                    img/photo-pov-desktop@2x.jpg 2x
+                    img/content/photo-pov-desktop@1x.jpg,
+                    img/content/photo-pov-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-pov-tablet@1x.jpg,
-                    img/photo-pov-tablet@2x.jpg 2x
+                    img/content/photo-pov-tablet@1x.jpg,
+                    img/content/photo-pov-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-pov-mobile@1x.jpg"
-                  srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  src="img/content/photo-pov-mobile@1x.jpg"
+                  srcset="img/content/photo-pov-mobile@2x.jpg 2x"
                   alt="Фото ног на горном склоне"
                 />
               </picture>
@@ -337,20 +337,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-wing-desktop@1x.jpg,
-                    img/photo-wing-desktop@2x.jpg 2x
+                    img/content/photo-wing-desktop@1x.jpg,
+                    img/content/photo-wing-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-wing-tablet@1x.jpg,
-                    img/photo-wing-tablet@2x.jpg 2x
+                    img/content/photo-wing-tablet@1x.jpg,
+                    img/content/photo-wing-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-wing-mobile@1x.jpg"
-                  srcset="img/photo-wing-mobile@2x.jpg 2x"
+                  src="img/content/photo-wing-mobile@1x.jpg"
+                  srcset="img/content/photo-wing-mobile@2x.jpg 2x"
                   alt="Фото крыла самолета в небе"
                 />
               </picture>
@@ -372,7 +372,7 @@
           </article>
         </div>
       </section>
-      <section class="try">
+      <section class="main-photo__try try">
         <p class="try__intro">Затмите их всех!</p>
         <p class="try__intro">Выкладывайте все, что накопилось в телефоне!</p>
         <form
@@ -387,20 +387,20 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    img/photo-road-desktop@1x.jpg,
-                    img/photo-road-desktop@2x.jpg 2x
+                    img/content/photo-road-desktop@1x.jpg,
+                    img/content/photo-road-desktop@2x.jpg 2x
                   "
                 />
                 <source
                   media="(min-width: 660px)"
                   srcset="
-                    img/photo-road-tablet@1x.jpg,
-                    img/photo-road-tablet@2x.jpg 2x
+                    img/content/photo-road-tablet@1x.jpg,
+                    img/content/photo-road-tablet@2x.jpg 2x
                   "
                 />
                 <img
-                  src="img/photo-road-mobile@1x.jpg"
-                  srcset="img/photo-road-mobile@2x.jpg 2x"
+                  src="img/content/photo-road-mobile@1x.jpg"
+                  srcset="img/content/photo-road-mobile@2x.jpg 2x"
                   alt="Фото изображающее зимнюю дорогу"
                 />
               </picture>
@@ -465,8 +465,8 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <a class="logo logo--footer">
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo logo logo--footer" href="index.html">
         <svg class="logo__glasses">
           <use xlink:href="img/sprite.svg#logo-glasses"></use>
         </svg>
@@ -483,7 +483,7 @@
           <use xlink:href="img/sprite.svg#logo-diacritic"></use>
         </svg>
       </a>
-      <div class="social">
+      <div class="page-footer__social social">
         <a
           class="social__link social__link--twitter"
           href="#"
@@ -512,14 +512,14 @@
           </svg>
         </a>
       </div>
-      <div class="copyright">
-        <p class="copyright__text">Разработано:</p>
+      <div class="page-footer__copyright copyright">
         <a
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="HTML Academy"
         >
-          <svg class="copyright__icon" width="40" height="40">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>

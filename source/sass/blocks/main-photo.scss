@@ -1,0 +1,24 @@
+.main-photo__page-headline {
+  padding-top: 94px;
+  padding-bottom: 44px;
+}
+
+.main-photo__pictures {
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  @media #{$tablet-min} {
+    padding-top: 75px;
+    padding-bottom: 65px;
+  }
+
+  @media #{$desktop-min} {
+    padding-bottom: 60px;
+  }
+}
+
+.main-photo__try {
+  @media #{$desktop-min} {
+    padding-bottom: 30px;
+  }
+}
