@@ -48,4 +48,8 @@
   @media #{$tablet-min} {
     padding-bottom: 5px;
   }
+
+  @media #{$desktop-min} {
+    padding-bottom: 0px;
+  }
 }

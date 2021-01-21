@@ -32,6 +32,7 @@
   @media #{$desktop-min} {
     @include c940;
     margin-top: 65px;
+    padding-left: 20px;
   }
 }
 
@@ -50,7 +51,8 @@
   @media #{$desktop-min} {
     width: 800px;
     grid-template-columns: 300px 420px;
-    column-gap: 90px;
+    grid-template-rows: min-content min-content;
+    column-gap: 81px;
   }
 }
 
@@ -63,7 +65,7 @@
   }
 
   @media #{$desktop-min} {
-    margin-left: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -102,11 +104,13 @@
     padding-bottom: 35px;
     grid-template-columns: 65px 290px;
     column-gap: 36px;
-    row-gap: 15px;
+    row-gap: 18px;
   }
 }
 
 .try__icon {
+  cursor: pointer;
+
   @media #{$tablet-min} {
     align-self: center;
   }
@@ -385,8 +389,8 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 110px;
-    padding-bottom: 45px;
+    padding-top: 117px;
+    padding-bottom: 59px;
     margin-left: 10px;
   }
 }
@@ -394,6 +398,7 @@
 .try__button {
   @include c280;
   margin-bottom: 12px;
+  cursor: pointer;
 
   @media #{$tablet-min} {
     width: 260px;
