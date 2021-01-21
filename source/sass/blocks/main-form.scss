@@ -1,15 +1,16 @@
 .main-form__page-headline {
-  padding-top: 77px;
-  padding-bottom: 29px;
+
+  padding-top: 94px;
+  padding-bottom: 44px;
 
   @media #{$tablet-min} {
-    padding-top: 144px;
-    padding-bottom: 25px;
+    padding-top: 177px;
+    padding-bottom: 59px;
   }
 
   @media #{$desktop-min} {
-    padding-top: 136px;
-    padding-bottom: 60px;
+    padding-top: 170px;
+    padding-bottom: 88px;
   }
 }
 
