@@ -26,7 +26,6 @@
 }
 
 .download__wrapper {
-
   @media #{$tablet-min} {
     @include c620();
   }

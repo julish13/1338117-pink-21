@@ -215,7 +215,7 @@
   width: 100%;
   margin: 5px 0;
   background-color: transparent;
-  -webkit-appearance: none;
+  appearance: none;
   grid-column-end: 4;
   grid-column-start: 1;
   grid-row-end: 3;
@@ -247,7 +247,7 @@
     background: $basic-white;
     border-radius: 50%;
     cursor: pointer;
-    -webkit-appearance: none;
+    appearance: none;
 
     &:active {
       background: $basic-pink;
