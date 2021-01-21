@@ -5,7 +5,8 @@
 .pictures__intro {
   @include c;
   width: 250px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 53px;
   line-height: 2.14;
 
   @media #{$tablet-min} {
@@ -25,8 +26,10 @@
   @include c280;
   display: grid;
   margin-top: 20px;
+  padding: 0;
   gap: 20px;
   grid-template-columns: 1fr;
+  list-style: none;
 
   @media #{$tablet-min} {
     @include c620;
@@ -163,6 +166,7 @@
 
 .pictures__comment {
   margin: 0;
+  line-height: 1.6;
   font-weight: 300;
   letter-spacing: 0.3px;
   text-align: left;
@@ -173,8 +177,9 @@
     }
   }
 
-  .pictures__item--day-choice & {
+  &--day-choice {
     margin-bottom: 10px;
+    line-height: 1.75;
 
     @media #{$tablet-min} {
       order: 1;
@@ -183,6 +188,9 @@
 }
 
 .pictures__likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: $basic-pink;
   font-size: 12px;
   text-align: left;
@@ -190,7 +198,6 @@
   line-height: 2;
 
   @media #{$tablet-min} {
-    display: flex;
     justify-content: space-between;
   }
 
@@ -202,7 +209,7 @@
 }
 
 .pictures__likes-icon {
-  margin-right: 15px;
+  margin-right: 18px;
   fill: currentColor;
 
   @media #{$tablet-min} {

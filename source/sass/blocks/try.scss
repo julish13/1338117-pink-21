@@ -71,7 +71,7 @@
   @include c;
   display: grid;
   width: 240px;
-  margin-top: 35px;
+  margin-top: 34px;
   margin-bottom: 34px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 7px;
@@ -105,16 +105,20 @@
   }
 
   svg {
-    use {
-      fill: transparentize($basic-color, 0.7);
+    fill: transparentize($basic-color, 0.7);
 
-      &:hover {
-        fill: transparentize($basic-color, 0.5);
-      }
+    &:hover {
+      fill: transparentize($basic-color, 0.5);
+    }
 
-      &:active {
-        fill: $basic-pink;
-      }
+    &:active {
+      fill: $basic-pink;
+    }
+  }
+
+  &--active {
+    svg {
+      fill: $basic-pink;
     }
   }
 
@@ -195,6 +199,7 @@
 
 .try__tool {
   position: relative;
+  display: none;
   width: 100%;
   margin: 5px 0;
   background-color: transparent;
@@ -203,6 +208,10 @@
   grid-column-start: 1;
   grid-row-end: 3;
   grid-row-start: 2;
+
+  &--active {
+    display: block;
+  }
 
   &::-webkit-slider-runnable-track {
     width: 100%;
@@ -346,7 +355,7 @@
 .try__buttons {
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 30px;
   border-top: 1px solid transparentize($basic-color, 0.9);
 
