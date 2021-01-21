@@ -306,7 +306,7 @@
       top: 0;
       border-radius: 0 1px 1px 0;
       width: 62px;
-      height: 62px;
+      height: 63px;
       background-color: $grey-90;
       background-repeat: no-repeat, no-repeat;
       background-position: center;
@@ -360,6 +360,7 @@
 }
 
 .form__label-radio {
+  cursor: pointer;
   position: relative;
   display: block;
   padding-left: 70px;
@@ -414,6 +415,7 @@ input {
 }
 
 .form__label-checkbox {
+  cursor: pointer;
   position: relative;
   display: block;
   padding-top: 5px;
@@ -549,26 +551,11 @@ input {
 
   .form__button {
     @include c280;
-    border: none;
-    background-color: $basic-green;
     line-height: 1;
 
     @media #{$tablet-min} {
       width: 300px;
       margin: 0;
-    }
-
-    &:hover {
-      background-color: $basic-green-hover;
-    }
-
-    &:active {
-      background-color: $basic-green-hover;
-      color: transparentize($basic-white, 0.7);
-    }
-
-    &:disabled {
-      background-color: $grey-95;
     }
   }
 }

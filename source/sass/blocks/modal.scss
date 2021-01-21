@@ -109,19 +109,6 @@
   @media #{$tablet-min} {
     width: 300px;
   }
-
-  &:hover {
-    background-color: $basic-green-hover;
-  }
-
-  &:active {
-    background-color: $basic-green-hover;
-    color: transparentize($basic-white, 0.7);
-  }
-
-  &:disabled {
-    background-color: $grey-95;
-  }
 }
 
 .modal__button--success {
