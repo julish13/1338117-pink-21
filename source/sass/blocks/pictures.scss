@@ -46,6 +46,13 @@
   }
 }
 
+.pictures__item {
+  @media #{$tablet-min} {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .pictures__photo-wrapper {
   display: block;
 
@@ -143,6 +150,7 @@
   background-color: $grey-95;
 
   @media #{$tablet-min} {
+    flex-grow: 1;
     min-height: 155px;
     padding: 18px 30px 26px 31px;
   }
