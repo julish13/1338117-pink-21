@@ -1,3 +1,10 @@
+.copyright {
+  @media #{$tablet-min} {
+    justify-self: end;
+    align-self: start;
+  }
+}
+
 .copyright__link {
   display: flex;
   align-items: center;

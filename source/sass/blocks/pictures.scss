@@ -27,7 +27,7 @@
   display: grid;
   margin-top: 20px;
   padding: 0;
-  gap: 20px;
+  grid-gap: 20px;
   grid-template-columns: 1fr;
   list-style: none;
 
@@ -36,7 +36,7 @@
     margin-top: 51px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(455px, 1fr);
-    gap: 18px;
+    grid-gap: 18px;
   }
 
   @media #{$desktop-min} {

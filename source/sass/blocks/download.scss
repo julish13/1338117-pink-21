@@ -1,5 +1,6 @@
 .download {
   @media #{$tablet-min} {
+    background-color: $basic-color;
     background-image: url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center top;
@@ -36,6 +37,7 @@
 }
 
 .download__header {
+  padding-bottom: 284px;
   padding-top: 90px;
   min-height: 462px;
   background-color: $basic-color;
@@ -51,6 +53,7 @@
   }
 
   @media #{$tablet-min} {
+    padding-bottom: 0;
     padding-top: 0;
     min-height: unset;
     background-image: none;

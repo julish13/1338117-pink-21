@@ -19,7 +19,7 @@
 
   @media #{$desktop-min} {
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 34px;
   }
 }
 
@@ -47,6 +47,7 @@
   }
 
   @media #{$desktop-min} {
+    align-self: start;
     padding: 0;
     margin-right: 172px;
   }
@@ -167,10 +168,11 @@
   list-style: none;
 
   @media #{$desktop-min} {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: 1fr / repeat(4, max-content);
+    grid-column-gap: 79px;
+    grid-row-gap: 10px;
     border-top: none;
-    padding-bottom: 5px;
   }
 }
 
@@ -207,7 +209,8 @@
 
   @media #{$desktop-min} {
     border: none;
-    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 14px;
     background-color: transparent;
     line-height: 1;
     font-weight: normal;
@@ -223,7 +226,7 @@
       &::after {
         position: absolute;
         right: 0;
-        bottom: -14px;
+        bottom: 0;
         left: 0;
         height: 2px;
         background: $basic-white;

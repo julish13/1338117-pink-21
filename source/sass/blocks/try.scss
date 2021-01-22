@@ -45,14 +45,14 @@
     @include c620;
     grid-template-columns: 300px 275px;
     grid-template-rows: 1fr 1fr;
-    column-gap: 40px;
+    grid-column-gap: 40px;
   }
 
   @media #{$desktop-min} {
     width: 800px;
     grid-template-columns: 300px 420px;
     grid-template-rows: min-content min-content;
-    column-gap: 81px;
+    grid-column-gap: 81px;
   }
 }
 
@@ -84,8 +84,8 @@
   margin-bottom: 34px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 7px;
-  column-gap: 0;
-  row-gap: 30px;
+  grid-column-gap: 0;
+  grid-row-gap: 30px;
 
   @media #{$tablet-min} {
     padding-bottom: 40px;
@@ -96,15 +96,15 @@
     grid-row-start: 1;
     grid-template-columns: 35px 202px;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 25px;
-    row-gap: 25px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
   }
 
   @media #{$desktop-min} {
     padding-bottom: 35px;
     grid-template-columns: 65px 290px;
-    column-gap: 36px;
-    row-gap: 18px;
+    grid-column-gap: 36px;
+    grid-row-gap: 18px;
   }
 }
 
