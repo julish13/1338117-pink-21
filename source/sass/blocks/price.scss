@@ -41,6 +41,7 @@
   text-align: center;
   text-transform: uppercase;
   vertical-align: top;
+  background-clip: padding-box;
 
   @media #{$tablet-min} {
     padding-bottom: 10px;
@@ -135,6 +136,7 @@
   text-align: left;
   text-transform: uppercase;
   vertical-align: top;
+  background-clip: padding-box;
 
   @media #{$tablet-min} {
     padding: 6px 10px 10px 15px;
