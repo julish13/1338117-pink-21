@@ -1,5 +1,7 @@
 # Личный проект «Пинк» 
 
+![Project check](https://github.com/julish13/pink/workflows/Project%20check/badge.svg)
+
 ### Ссылки на опубликованный проект:
 
 - [Главная страница](https://julish13.github.io/pink/index.html)
